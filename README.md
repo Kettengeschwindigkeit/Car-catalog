@@ -1,3 +1,5 @@
+## NextJS full course by RedGroup (2023) - https://www.youtube.com/watch?v=g1mPqu7u39o
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
