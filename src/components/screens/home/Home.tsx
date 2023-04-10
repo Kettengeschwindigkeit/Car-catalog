@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 const Home: FC = () => {
     return (
-        <Layout>
+        <Layout title="Home" description="We love our customers, we like to sale cars">
             <main className={styles.main}>
                 <div className={styles.description}>
                     <p>
