@@ -1,4 +1,4 @@
-import { GetServerSideProps, NextPage } from "next";
+import { GetServerSideProps, GetStaticProps, NextPage } from "next";
 import { ICarData } from "@/interfaces/car.interface";
 import { CarService } from "@/services/car.service";
 import Home from "@/components/screens/home/Home";
@@ -7,12 +7,22 @@ const HomePage: NextPage<ICarData> = ({ cars }) => {
   return <Home cars={cars} />
 }
 
-export const getServerSideProps: GetServerSideProps<ICarData> = async () => {
+// export const getServerSideProps: GetServerSideProps<ICarData> = async () => {
+//   const cars = await CarService.getAll()
+
+//   return {
+//     props: { cars }
+//   }
+// }
+
+export const getStaticProps: GetStaticProps<ICarData> = async () => {
   const cars = await CarService.getAll()
 
   return {
-    props: { cars }
+    props: { cars },
+    revalidate: 60
   }
 }
+
 
 export default HomePage;

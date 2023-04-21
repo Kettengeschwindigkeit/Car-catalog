@@ -19,4 +19,3 @@ const Layout: FC<PropsWithChildren<IMeta>> = ({ children, title, description }) 
 }
 
 export default Layout;
-    
