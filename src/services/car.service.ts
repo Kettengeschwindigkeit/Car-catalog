@@ -1,7 +1,7 @@
-import { ICar } from '@/interfaces/car.interface'
-import axios from 'axios'
+import { ICar } from "@/interfaces/car.interface";
+import axios from "axios";
 
-const API_URL = 'http://localhost:4200'
+const API_URL = "http://localhost:4200"
 
 axios.defaults.baseURL = API_URL
 
